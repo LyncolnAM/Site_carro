@@ -34,27 +34,52 @@ header nav.desktop{
 	top:40px;
 }
 
-nav.mobile{
-	margin-top:40px;
-	float: right;
-	width: 32px;
-	height: 32px;
-	background-size: 100% 100%;
-	cursor: pointer;
-	background-image: url('../imagens/icon_menu.png');
+.icon-flex{
+	display: flex;
+	justify-content: space-around;
+}
+
+.btn-mobile{
+	background-color: transparent ;
+	border: none;
+	display: none;
+
+}
+
+.mobile{
+	margin: 0;
+	z-index: 999;
+	position: absolute;
+	top: 130px;
+	width: 97%;
+	height: auto;
+	background-color: #fff;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	display: none;
+	margin: 0 auto;
+
+}
+
+.mobile ul{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+	list-style: none;
 	display: none;
 }
 
-nav.mobile ul{
-	display: none;
+.mobile ul li a{
+	margin: 0 auto;
 	width: 100%;
-	left: 0;
-	top: 95px;
-	border-bottom:4px solid #EB2D2D;
-	z-index: 999;
-	position: absolute;
-	text-align: center;
-	background-color: white;
+	border-bottom: 2px solid #EB2D2D;
+}
+
+.open{
+	display: block;
 }
 
 nav.mobile li{
@@ -637,9 +662,9 @@ section.venda-single{
 
 
 	.nome-depoimento{
-	float: left;
-	width: 100%;
-	margin:20px 20px;
+		float: left;
+		width: 100%;
+		margin:20px 20px;
 	}
 
 
@@ -687,9 +712,7 @@ section.venda-single{
 		display: none;
 	}
 
-	nav.mobile{
-		display: block;
-	}
+	
 
 	.w50{
 		width: 100%;
@@ -714,6 +737,28 @@ section.venda-single{
 		text-align: center;
 		width: 100%;
 	}
+	
+	.btn-mobile{
+		
+		display: block;
+		background-color: black;
+		border: 0;
+	}
+	
+	
+	
+	.mobile ul{
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		margin: 0 40%;
+		flex-direction: column;
+		list-style: none;
+		display:block;
+	}
+	
+
+	
 }
 
 
@@ -752,6 +797,7 @@ section.veiculos-destaque .container{
 .vitrine-destaque a{
 	display: inline-block;
 }
+
 
 }
 
